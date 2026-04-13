@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Compra de vehiculos nuevos</h1>
+      <p id="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <legend>Datos para la reserva</legend>
+        <label for="name" id="name-label">Nombre</label>
+        <input id="name" type="text" name="name" required placeholder="e.g. Quincy Larson"/>
+        <label for="email" id="email-label">EMail</label>
+        <input id="email" type="email" name="email-label" required placeholder="@gmail.com"/>
+        <label for="number" id="number-label">Edad</label>
+        <input id="number" type="number" placeholder="años" name="number-label"  min="18" max="100"/>
+        <legend>Colores a escoger</legend>
+        <label for="dropdown"></label>
+        <select id="dropdown" name="color">
+          <option value="rojo">Rojo</option>
+          <option value="verde">Verde</option>
+          <option value="negro">Negro</option>
+          <option value="blaco">Blanco</option>
+          <option value="azul">Azul</option>
+          <option  selected value="plateado">Plateado</option>
+        </select>
+        <legend>Marca de vehiculo</legend>
+        <input id="chery-option" type="radio" name="color-car" value="chery"/>
+        <label for="chery-option">Chery</label>
+        <input id="ford-option" type="radio" name="color-car" value="ford"/>
+        <label for="ford-option">Ford</label>
+        <input id="toyota-option" type="radio" name="color-car" value="toyota"/>
+        <label for="toyota-option">Toyota</label>
+        <input id="hyundai-option" type="radio" name="color-car" value="hyundai"/>
+        <label for="hyundai-option">Hyundai</label>
+        <input id="fiat-option" type="radio" name="color-car" value="fiat" checked/>
+        <label for="fiat-option">Fiat</label>
+        <input id="chevrolet-option" type="radio" name="color-car" value="chevrolet" />
+        <label for="chevrolet-option">Checrolet</label>
+        <legend>Accesorios adicionales para el vehiculo</legend>
+        <input type="checkbox" id="accessories" name="choice" value="volante" />
+        <label for="accessories">Volante de cuero</label>
+        <input type="checkbox" id="forros" name="choice" value="forros" />
+        <label for="forros">Forros de asientos de cuero sintetico</label>
+        <input type="checkbox" id="carpet" name="choice" value="carpet" />
+        <label for="carpet">Tapete con el logo del vehiculo</label>
+        <input type="checkbox" id="aroma" name="choice" value="aroma" />
+        <label for="aroma">Caja de ambientadores</label>
+        <input type="checkbox" id="sticker" name="choice" value="stiker" />
+        <label for="stiker">Calcomania en la base del vehiculo</label>
+        <input type="checkbox" id="horn" name="choice" value="horn" />
+        <label for="horn">Equipo de sonido</label>
+        <input type="checkbox" id="screen" name="choice" value="screen" />
+        <label for="screen">Pantalla 9 pulgadas para el panel</label>
+        <fieldset>
+          <legend>Caja de comentarios</legend>
+          <label for="comments">Detalles adicionales para su vehiculo</label>
+          <textarea cols="30" rows="10" name="comments" id="comments">
+          </textarea>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
